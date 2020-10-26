@@ -5,43 +5,57 @@ body {
   margin: 0;
 }
 
-aside {
-  display: none;
+#header {
+  height: 70px;
+  background-color: gray;
 }
 
-.image {
-  background-color: pink;
-  height: 100px;
+#main-pannel {
+  height: auto;
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
 }
 
-.text {
-  background-color: silver;
-  height: 100px;
+#left {
+  height: 400px;
+  width: 700px;
+  background-color: lightcoral;
 }
+#right {
+  height: 400px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+#upper {
+  height: 300px;
+  background-color: khaki;
+}
+#lower {
+  height: 100px;
+  background-color: azure;
+}
+
+#main-content {
+  height: 250px;
+  width: 960px;
+  background-color:lightgreen;
+  margin: 0 auto;
+}
+
+#footer{
+  height: 60px;
+  background-color: gray;
+}
+
 
 /* medium screen */
-@media (min-width: 600px) {
-  section {
-    display: flex;
-  }
-  .image {
-    width: 200px;
-  }
-  .text {
-    flex: 1;
-  }
+@media (min-width: 415px) {
+
 } 
 
 /* large screen */
-@media (min-width: 800px) {
-  section {
-    width: 800px;
-    margin: 0 auto;
-  }
+@media (min-width: 960px) {
 
-  aside {
-    display: block;
-    background-color: plum;
-    width: 160px;
-  }
 } 
