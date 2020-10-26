@@ -6,8 +6,11 @@ body {
 }
 
 #header {
+  position: fixed;
   height: 70px;
+  width: 100%;
   background-color: gray;
+  margin: 0;
 }
 
 #main-pannel {
@@ -15,6 +18,7 @@ body {
   width: 960px;
   margin: 0 auto;
   display: flex;
+  padding: 70px 0 0;
 }
 
 #left {
@@ -50,12 +54,35 @@ body {
 }
 
 
-/* medium screen */
-@media (min-width: 415px) {
+@media (max-width: 960px) {
+  #main-pannel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #right {
+    height: 400px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+  #upper {
+    height: 300px;
+    background-color: khaki;
+  }
+  #lower {
+    height: 100px;
+    background-color: azure;
+  }
+} 
+
+
+@media (max-width: 480px) {
 
 } 
 
-/* large screen */
-@media (min-width: 960px) {
 
-} 
+
+@media (max-width: 600px) {
+}
+
